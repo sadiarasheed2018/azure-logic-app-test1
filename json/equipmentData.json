@@ -1,0 +1,13 @@
+{
+  "equipment": [
+      {
+          "siteId":"1234",
+          "serialNumber":"Y2H18075834",
+          "city":"Lanesboro",
+          "county": "Fillmore",
+          "segment":"Root River Trail",
+          "type":"path/trail",
+          "startTime":"2016-11-21T00:00:00-0800"
+      }
+  ]
+}

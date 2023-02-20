@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logic App Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script/main.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+
+<!-- Data Tables JQuery Plugin -->
+<!--     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css"> -->
+<!--     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script> -->
+</head>
+<body>
+
+    <div id="banner">
+        <div id="bannerTitle">
+            <label>Logic App Test</label>
+        </div>
+    </div>
+
+    <div style="clear:both; height:20px;"></div>                   
+
+    <div id="messageArea">
+        <label id="message" style="color:green; font-size:1.3em; font-weight:bold;"></label>
+        <label id="errorMessage" style="color:red; font-size:1.3em; font-weight:bold;"></label>
+    </div>
+
+    <div style="clear:both; height:20px;"></div>                   
+
+    <div id="inputArea" style="width:300px; margin-left:100px; margin-top:0px; float:left;">
+        <label style="font-weight:bold">Add Customer:</label>
+        <div style="clear:both; height:20px;"></div>                   
+                               
+        <div id="inputAreaLabels" style="margin-right:10px; padding-top:3px; float:left;">
+            <label style="float:right;">First Name:</label>
+            <div style="clear:both; height:11px;"></div>
+            <label style="float:right;">Last Name:</label>
+            <div style="clear:both; height:11px;"></div>
+            <label style="float:right;">Age:</label>
+            <div style="clear:both; height:11px;"></div>
+            <label style="float:right;">Gender:</label>
+        </div>
+
+        <div id="inputAreaData" style="float:left;">
+            <input type="text" id="firstName" style="float:left;">
+            <div style="clear:both; height:5px;"></div>
+            <input type="text" id="lastName" style="float:left;">
+            <div style="clear:both; height:5px;"></div>
+            <input type="text" id="age" style="float:left;">
+            <div style="clear:both; height:5px;"></div>
+            <input type="text" id="gender" style="float:left;">
+ 
+            <div style="clear:both; height:20px;"></div>
+
+            <button id="addCustomerButton">Add Customer</button>
+        </div>
+
+    </div>
+
+    <div id="inputArea3" style="width:300px; margin-left:100px; margin-top:0px; float:left;">
+        <label style="font-weight:bold">Delete Customer:</label>
+        <div style="clear:both; height:20px;"></div>                   
+                               
+        <div id="inputAreaLabels" style="margin-right:10px; padding-top:3px; float:left;">
+            <label style="float:right;">Customer Id:</label>
+        </div>
+
+        <div id="inputAreaData2" style="float:left;">
+            <input type="text" id="customerId" style="float:left;">
+
+            <div style="clear:both; height:20px;"></div>
+
+            <button id="deleteCustomerByIdButton">Delete Customer</button>
+        </div>
+    </div>
+    
+    <div style="clear:both; height:20px;"></div>
+
+    <div id="inputArea2" style="width:300px; margin-left:100px; margin-top:20px; float:left;">
+        <label style="font-weight:bold">Get Customer:</label>
+        <div style="clear:both; height:20px;"></div>                   
+                               
+        <div id="inputAreaLabels" style="margin-right:10px; padding-top:3px; float:left;">
+            <label style="float:right;">Last Name:</label>
+            </div>
+
+        <div id="inputAreaData2" style="float:left;">
+            <input type="text" id="customerLastNameSearch" style="float:left;">
+            <div style="clear:both; height:0px;"></div>
+            <label style="font-size:.8em">(case sensitive)</label>
+
+            <div style="clear:both; height:20px;"></div>
+
+            <button id="getCustomerButton">Get Customer</button>
+    
+            <button id="getAllCustomersButton" style="margin-left:70px;">Get All Customers</button>
+        </div>
+    </div>
+
+    <div style="clear:both; height:10px;"></div>
+
+    <div id="resultArea" style="width:300px; margin-left:100px; margin-top:40px; float:left;">
+        <label style="font-weight:bold">Result:</label>
+        <div style="clear:both; height:20px;"></div>
+
+        <div id="resultAreaLabels" style="margin-right:10px; float:left;"></div>
+
+        <div id="resultAreaData" style="float:left; padding-top:0.5px;"></div>    
+    </div>
+
+</body>
+</html>

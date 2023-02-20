@@ -1,0 +1,42 @@
+[
+    {
+      "siteId":"<a href=\"detail.jsp\" style=\"color:blue; text-decoration:underline;\" target=\"_blank\">100008219</a>",
+      "channel1Id":"101008219",
+      "channel2Id":"102008219",
+      "channel3Id":"null",
+      "channel4Id":"null",
+      "name": "Rochester | Quarry Hill Park and Nature Center",
+      "installationDate": "2012-12-07T00:00:00-0600",
+      "serialNumber":"<a href=\"detail.jsp\" style=\"color:blue; text-decoration:underline;\" target=\"_blank\">U15G2123145</a>"
+    },
+    {
+      "siteId":"<a href=\"detail.jsp\" style=\"color:blue; text-decoration:underline;\" target=\"_blank\">100009157</a>",
+      "channel1Id":"101009157",
+      "channel2Id":"null",
+      "channel3Id":"null",
+      "channel4Id":"null",
+      "name": "D1 | Duluth | Scenic 61 NEB",
+      "installationDate": "2014-06-09T00:00:00-0500",
+      "serialNumber":"<a href=\"detail.jsp\" style=\"color:blue; text-decoration:underline;\" target=\"_blank\">Y2G13073957</a>"
+    },
+    {
+      "siteId":"<a href=\"detail.jsp\" style=\"color:blue; text-decoration:underline;\" target=\"_blank\">100009160</a>",
+      "channel1Id":"101009160",
+      "channel2Id":"null",
+      "channel3Id":"null",
+      "channel4Id":"null",
+      "name": "Metro | Minneapolis | Central Ave SB",
+      "installationDate": "2013-11-14T00:00:00-0600",
+      "serialNumber":"<a href=\"detail.jsp\" style=\"color:blue; text-decoration:underline;\" target=\"_blank\">Y2H18034776</a>"
+    },
+    {
+      "siteId":"<a href=\"detail.jsp\" style=\"color:blue; text-decoration:underline;\" target=\"_blank\">100009163</a>",
+      "channel1Id":"101009163",
+      "channel2Id":"102009163",
+      "channel3Id":"103009163",
+      "channel4Id":"104009163",
+      "name": "D1 | Duluth - Lakewalk Trail (OLD)",
+      "installationDate": "2014-06-09T00:00:00-0500",
+      "serialNumber":"<a href=\"detail.jsp\" style=\"color:blue; text-decoration:underline;\" target=\"_blank\">null</a>"
+    }
+]
