@@ -115,7 +115,7 @@ function getCustomer(customerLastNameSearch, option) { // Retreive a customer re
 	} else {
 		if(option == "singleItemSearch") {
 			var baseURL = "https://prod-22.centralus.logic.azure.com/workflows/4365e8b3bd4242edb18274cdd8895fa0/triggers/manual/paths/invoke";
-			var urlPath = "/id/";
+			var urlPath = "/lastName/";
 			var urlPathParam = customerLastNameSearch;
 			var urlQueryParam = "?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=3j8IOMDx9Tambvzic7ywOmg_ndXC74F2xN-mnuhwxaY";
 			var url = baseURL + urlPath + urlPathParam + urlQueryParam;
@@ -162,10 +162,11 @@ function getItems(item) { // 'item' is each array item (object) sent in from the
 	$("#resultAreaData").append("<div id=\"resultDataGroup\"></div>"); // Create this group to hold the results. Then we can remove this group with 'clearAllFields' function.
 
 	if(arrayLength == 1) {
-		$("#resultDataGroup").append("<label id=\"resultDataCustomerId\" style=\"float:left;\">" + item.id + "</label><img id=\"deleteCustomerRecord\" src=\"img/deleteIcon.png\" style=\"float:left; margin-left:40px;\" width=\"20\" height=\"20\"><div style=\"clear:both; height:0px;\"></div>");
+		$("#resultDataGroup").append("<label id=\"resultDataCustomerId\" style=\"float:left;\">" + item.lastName + "</label><img id=\"deleteCustomerRecord\" src=\"img/deleteIcon.png\" style=\"float:left; margin-left:40px;\" width=\"20\" height=\"20\"><div style=\"clear:both; height:0px;\"></div>");
 	} else {
-		$("#resultDataGroup").append("<label id=\"resultDataCustomerId\" style=\"float:left;\">" + item.id + "</label><div style=\"clear:both; height:5px;\"></div>");
+		$("#resultDataGroup").append("<label id=\"resultDataCustomerId\" style=\"float:left;\">" + item.lastName + "</label><div style=\"clear:both; height:5px;\"></div>");
 	}
+	$("#resultDataGroup").append("<label id=\"resultDataFirstName\" style=\"float:left;\">" + item.id + "</label><div style=\"clear:both; height:5px;\"></div>");
 	$("#resultDataGroup").append("<label id=\"resultDataFirstName\" style=\"float:left;\">" + item.firstName + "</label><div style=\"clear:both; height:5px;\"></div>");
 	$("#resultDataGroup").append("<label id=\"resultDataLastName\" style=\"float:left;\">" + item.lastName + "</label><div style=\"clear:both; height:5px;\"></div>");
 	$("#resultDataGroup").append("<label id=\"resultDataAge\" style=\"float:left;\">" + item.Age + "</label><div style=\"clear:both; height:5px;\"></div>");
