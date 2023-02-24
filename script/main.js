@@ -162,11 +162,10 @@ function getItems(item) { // 'item' is each array item (object) sent in from the
 	$("#resultAreaData").append("<div id=\"resultDataGroup\"></div>"); // Create this group to hold the results. Then we can remove this group with 'clearAllFields' function.
 
 	if(arrayLength == 1) {
-		$("#resultDataGroup").append("<label id=\"resultDataCustomerId\" style=\"float:left;\">" + item.lastName + "</label><img id=\"deleteCustomerRecord\" src=\"img/deleteIcon.png\" style=\"float:left; margin-left:40px;\" width=\"20\" height=\"20\"><div style=\"clear:both; height:0px;\"></div>");
+		$("#resultDataGroup").append("<label id=\"resultDataCustomerId\" style=\"float:left;\">" + item.id + "</label><img id=\"deleteCustomerRecord\" src=\"img/deleteIcon.png\" style=\"float:left; margin-left:40px;\" width=\"20\" height=\"20\"><div style=\"clear:both; height:0px;\"></div>");
 	} else {
-		$("#resultDataGroup").append("<label id=\"resultDataCustomerId\" style=\"float:left;\">" + item.lastName + "</label><div style=\"clear:both; height:5px;\"></div>");
+		$("#resultDataGroup").append("<label id=\"resultDataCustomerId\" style=\"float:left;\">" + item.id + "</label><div style=\"clear:both; height:5px;\"></div>");
 	}
-	$("#resultDataGroup").append("<label id=\"resultDataFirstName\" style=\"float:left;\">" + item.id + "</label><div style=\"clear:both; height:5px;\"></div>");
 	$("#resultDataGroup").append("<label id=\"resultDataFirstName\" style=\"float:left;\">" + item.firstName + "</label><div style=\"clear:both; height:5px;\"></div>");
 	$("#resultDataGroup").append("<label id=\"resultDataLastName\" style=\"float:left;\">" + item.lastName + "</label><div style=\"clear:both; height:5px;\"></div>");
 	$("#resultDataGroup").append("<label id=\"resultDataAge\" style=\"float:left;\">" + item.Age + "</label><div style=\"clear:both; height:5px;\"></div>");
