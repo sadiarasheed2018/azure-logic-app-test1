@@ -66,7 +66,7 @@ function addCustomer() { // Create a new customer record in the Db.
 
 		$.ajax({
 			type: "POST",
-			url: "https://prod-01.centralus.logic.azure.com:443/workflows/aeed347d57ab436285c8c606fe4587c1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ZQuFIOmddTFbNgqobwsEJ0iy1asJZdHgR7xEFaknAGg",
+			url: "https://prod-01.centralus.logic.azure.com:443/workflows/86ddb292b0c3439db04bd84769e6d4bf/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=30kx8x_nhv7m2U3RovZGdfy5pXKTUZEbySreUNKXqgI",
 			data: data,
 			headers: { "Content-Type": "application/json" },
 			dataType: 'json',
